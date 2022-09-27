@@ -94,3 +94,26 @@ function factorial(num){
     return (num* factorial(num-1));
 }
 console.log("Factorial de 5 = "+ factorial(5));
+
+//++++++++++REst parameters+++++++++++++añadi desde aqui la rama js
+//(parameters) => operation;
+//(param1, param2) => {
+//return data
+//};
+
+function sum(a,b, ...resto){
+    let suma = a+b;
+    resto.forEach(element => {
+        //suma = suma + element;
+        suma += element;
+    });
+    return suma;
+}
+
+//esta es otra forma de hacerlo
+/* function sum(a,b, ...resto){
+    let suma =a+b;
+    resto.array.forEach(dato => {suma+=dato;});
+    return suma;
+} */
+console.log("el resultado de varios numeros es: "+sum(2,3,5,7,3));
