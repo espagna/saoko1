@@ -152,8 +152,8 @@ switch (valor) {
 console.log(`La edad es ${comparacion} a 25.`);
 
 //un ejemplo random de como usar switch
-let numeroMes = 10;
-estacion = "", mes = "";
+/*let numeroMes = 10;
+let estacion = "", mes = "";
 
 switch (numeroMes) {
   case 12:
@@ -191,3 +191,110 @@ switch (numeroMes) {
 }
 
 console.log("El mes de " + mes + " se encuentra en la estación " + estacion);
+*/
+
+let numeroMes = 12;
+let estacion = "", mes = "";
+
+switch (numeroMes) {
+  case 12:
+    mes = "Diciembre";
+    estacion="Invierno";
+    break;
+  case 1:
+    mes = "Enero";
+    estacion="invierno";
+    break;
+  case 2:
+    mes = "Febrero";
+    estacion = "Invierno";
+    break;
+  case 3:
+    mes = "Marzo";
+    estacion="primavera";
+    break;
+  case 4:
+    mes = "Abril";
+    estacion="primavera"
+    break;
+  case 5:
+    mes = "Mayo";
+    estacion = "Primavera";
+    break;
+  case 6:
+    mes = "Junio";
+    estacion="primavera";
+    break;
+  case 7:
+    mes = "Julio";
+    estacion="verano";
+    break;
+  case 8:
+    mes = "Agosto";
+    estacion = "Verano";
+    break;
+  case 9:
+    mes = "Septiembre";
+    estacion="otoño";
+    break;
+  case 10:
+    mes = "Octubre";
+    estacion = "otoño";
+    break;
+  case 11:
+    mes = "Noviembre";
+    estacion = "Otoño";
+    break;
+}
+
+console.log("El mes de " + mes + " se encuentra en la estación " + estacion);
+
+//----  lo de arriba pero con if if else
+if(numeroMes > 0 && numeroMes <3 || numeroMes === 12){
+    console.log("El mes se encuentra en la estacion de invierno!");
+} 
+else if (numeroMes >2 && numeroMes<7){
+    console.log("El mes se encuentra en la estación de primavera");
+}
+else if(numeroMes > 6 && numeroMes < 9){
+    console.log("El mes se encuentra en verano!");
+}
+else if(numeroMes > 8 && numeroMes < 12){
+    console.log("El mes se encuentra en otoño!");
+}
+
+/*  Otra forma de hacer lo de arriba
+
+if (numeroMes === 12 || numeroMes === 1 || numeroMes === 2) {
+    estacion = "Invierno";
+    if (numeroMes === 12) mes = "Diciembre";
+    else if (numeroMes === 1) mes = "Enero";
+    else mes = "Febrero";
+  }
+  else if (numeroMes >= 3 && numeroMes <= 5) {
+    estacion = "Primavera";
+    if (numeroMes === 3) mes = "Marzo";
+    else if (numeroMes === 4) mes = "Abril";
+    else mes = "Mayo";
+  }
+  else if (numeroMes >= 6 && numeroMes <= 8) {
+    estacion = "Verano";
+    if (numeroMes === 6) mes = "Junio";
+    else if (numeroMes === 7) mes = "Julio";
+    else mes = "Agosto";
+  }
+  else if (numeroMes >= 9 && numeroMes <= 11) {
+    estacion = "Otoño";
+    if (numeroMes === 9) mes = "Septiembre";
+    else if (numeroMes === 10) mes = "Octubre";
+    else mes = "Noviembre";
+  }
+  else {
+    estacion = "No se encontro";
+    mes = "No se encontro";
+  }   */
+
+  let online = true;
+  let active = true;
+
+  online && active && console.log("james"); //esto es solo para repasar lo de los operadores, en este caso se imprime james porque online es true, active tambien, luego pasan a compararse con el log de james que igual es true, entonces se arroja james
